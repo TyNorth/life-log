@@ -1,1 +1,26 @@
 // app global css in SCSS form
+// Define Material 3 color palette
+$md-primary: #6750a4;
+$md-on-primary: #ffffff;
+$md-secondary: #625b71;
+$md-on-secondary: #ffffff;
+// ... define other colors
+
+// Customize Quasar components
+.q-btn {
+  // Apply Material 3 shape
+
+  &.q-btn--filled {
+    // Filled button styles
+    background-color: $md-primary !important;
+    color: $md-on-primary;
+  }
+
+  &.q-btn--outlined {
+    // Outlined button styles
+    border-color: $md-secondary;
+    color: $md-secondary;
+  }
+}
+
+// ... customize other components
